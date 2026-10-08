@@ -1,0 +1,212 @@
+/**
+ * Light theme — toggled via `data-theme="light"` on <html>.
+ * Dark theme remains the default (no attribute).
+ */
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #faf7f5;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f3ecec;
+  --border: rgba(92, 13, 15, 0.12);
+  --text: #1f1214;
+  --text-muted: #6b5254;
+  --accent: #ea580c;
+  --accent-strong: #c2410c;
+  --accent-soft: rgba(234, 88, 12, 0.12);
+  --maroon: #7b1113;
+  --maroon-deep: #5c0d0f;
+  --success: #15803d;
+  --warn: #c2410c;
+  --danger: #b91c1c;
+  --shadow: 0 16px 40px rgba(92, 13, 15, 0.12);
+
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(rgba(123, 17, 19, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 17, 19, 0.03) 1px, transparent 1px),
+    radial-gradient(ellipse 90% 55% at 15% -15%, rgba(249, 115, 22, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% 0%, rgba(123, 17, 19, 0.08), transparent 50%);
+}
+
+[data-theme="light"] .app-header {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: rgba(92, 13, 15, 0.1);
+  box-shadow: 0 1px 0 rgba(249, 115, 22, 0.08);
+}
+
+[data-theme="light"] .app-header__title,
+[data-theme="light"] .page-header h2,
+[data-theme="light"] .card__header h2,
+[data-theme="light"] .incoming-mail-panel h3,
+[data-theme="light"] .login-page__header h1,
+[data-theme="light"] .tracker-log__header h3 {
+  color: var(--text);
+}
+
+[data-theme="light"] .app-nav {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom-color: rgba(92, 13, 15, 0.1);
+}
+
+[data-theme="light"] .app-nav__tab {
+  color: rgba(31, 18, 20, 0.72);
+}
+
+[data-theme="light"] .app-nav__tab:hover {
+  background: rgba(123, 17, 19, 0.05);
+  border-color: rgba(92, 13, 15, 0.12);
+  color: var(--text);
+}
+
+[data-theme="light"] .app-nav__tab--active {
+  color: #fff;
+}
+
+[data-theme="light"] .app-footer {
+  background: rgba(255, 255, 255, 0.94);
+  border-top-color: rgba(92, 13, 15, 0.1);
+  color: var(--text-muted);
+}
+
+[data-theme="light"] .card {
+  background: linear-gradient(165deg, #ffffff, #faf4f2);
+  border-color: rgba(92, 13, 15, 0.1);
+  box-shadow: var(--shadow);
+}
+
+[data-theme="light"] .btn--secondary {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(92, 13, 15, 0.14);
+  color: var(--text);
+}
+
+[data-theme="light"] .btn--secondary:hover,
+[data-theme="light"] .btn--secondary.btn--active {
+  color: var(--maroon-deep);
+}
+
+[data-theme="light"] .field__control {
+  background: #fff;
+  border-color: rgba(92, 13, 15, 0.16);
+  color: var(--text);
+}
+
+[data-theme="light"] .field__control:focus {
+  border-color: rgba(234, 88, 12, 0.55);
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.14);
+}
+
+[data-theme="light"] .alert-summary-card {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .alert-summary-card--safe .alert-summary-card__value {
+  color: var(--success);
+}
+
+[data-theme="light"] .alert-summary-card--dashboard .alert-summary-card__value {
+  color: var(--accent-strong);
+}
+
+[data-theme="light"] .alert-record {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+[data-theme="light"] .alert-record--safe {
+  background: rgba(21, 128, 61, 0.06);
+}
+
+[data-theme="light"] .alert-record--dashboard {
+  background: rgba(249, 115, 22, 0.08);
+}
+
+[data-theme="light"] .alert-record--urgent {
+  background: rgba(123, 17, 19, 0.08);
+}
+
+[data-theme="light"] .login-page {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249, 115, 22, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(123, 17, 19, 0.08), transparent),
+    var(--bg);
+}
+
+[data-theme="light"] .login-page__card {
+  border-color: rgba(92, 13, 15, 0.12);
+  box-shadow: var(--shadow);
+}
+
+[data-theme="light"] .login-page__header h1 {
+  color: var(--text);
+}
+
+[data-theme="light"] .app-header__scan-count {
+  color: var(--text);
+}
+
+[data-theme="light"] .app-header__scan-status {
+  color: var(--text-muted);
+  border-color: rgba(92, 13, 15, 0.14);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] .app-header__scan-status--active {
+  color: #fff;
+}
+
+[data-theme="light"] .app-header__scan-status--ok {
+  color: var(--success);
+  border-color: rgba(21, 128, 61, 0.25);
+  background: rgba(21, 128, 61, 0.08);
+}
+
+[data-theme="light"] .app-header__scan-status--warn {
+  color: var(--accent-strong);
+  border-color: rgba(234, 88, 12, 0.25);
+  background: rgba(249, 115, 22, 0.08);
+}
+
+[data-theme="light"] .app-header__scan-status--error {
+  color: var(--danger);
+  border-color: rgba(185, 28, 28, 0.25);
+  background: rgba(185, 28, 28, 0.08);
+}
+
+[data-theme="light"] .tracker-log__table th {
+  color: var(--text-muted);
+}
+
+[data-theme="light"] .tracker-log__table th,
+[data-theme="light"] .tracker-log__table td {
+  border-bottom-color: rgba(92, 13, 15, 0.08);
+}
+
+[data-theme="light"] .tracker-log__event--in {
+  color: var(--success);
+  background: rgba(21, 128, 61, 0.1);
+  border-color: rgba(21, 128, 61, 0.22);
+}
+
+[data-theme="light"] .tracker-log__event--out {
+  color: var(--text-muted);
+  background: rgba(92, 13, 15, 0.05);
+  border-color: rgba(92, 13, 15, 0.12);
+}
+
+[data-theme="light"] .site-lists-add__feedback--warn {
+  color: var(--accent-strong);
+  background: rgba(249, 115, 22, 0.1);
+  border-color: rgba(234, 88, 12, 0.25);
+}
+
+[data-theme="light"] .theme-toggle__label {
+  color: var(--text);
+}
+
+[data-theme="light"] .card:not(.alert-analysis-side):not(.confirm-dialog):hover {
+  box-shadow: 0 18px 40px rgba(92, 13, 15, 0.14);
+  border-color: rgba(123, 17, 19, 0.16);
+}

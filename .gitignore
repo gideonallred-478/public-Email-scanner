@@ -1,0 +1,26 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vercel
+.data
+smtp-inbox/
+
+# Local credentials and secrets (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Local mailbox and authentication state
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.eml
+*.msg
+*.log
+*.secrets.json
